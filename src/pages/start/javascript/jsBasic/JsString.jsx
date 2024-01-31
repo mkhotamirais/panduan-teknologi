@@ -1,6 +1,6 @@
 const JsString = () => {
   return (
-    <pre>{`
+    <pre className="overflow-x-scroll">{`
 const str = "abcde 1234 bcdef 2345";
 // 1. return number
 // .length

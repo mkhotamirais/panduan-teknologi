@@ -8,7 +8,7 @@ const JsCases = () => {
         <li>filter duplicate</li>
         <li>
           contoh:
-          <pre>{`
+          <pre className="overflow-x-scroll">{`
 const arrDuplicate = ["a", "b", "c", "a", "d", "f", "b", "d"];
 const arrSingle = arrDuplicate.filter((item, i) => arrDuplicate.indexOf(item) === i);
 console.log(arrDuplicate, arrSingle);
@@ -20,7 +20,7 @@ console.log(arrDuplicate, arrSingle);
         </li>
         <li>
           contoh:
-          <pre>{`
+          <pre className="overflow-x-scroll">{`
 const arrToSorting = [2, 10, 4, 30, 6, 50];
 console.log(arrToSorting.sort());
 arrToSorting.sort((a, b) => console.log(a, b, a - b));

@@ -1,6 +1,6 @@
 const JsArray = () => {
   return (
-    <pre>{`
+    <pre className="overflow-x-scroll">{`
 const arrInherit = ["a", "b", ["aa", "bb", ["aaa", "bbb"]]];
 const arr = ["a", "b", "c"];
 

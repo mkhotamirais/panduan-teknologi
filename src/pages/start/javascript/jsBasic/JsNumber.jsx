@@ -1,6 +1,6 @@
 const JsNumber = () => {
   return (
-    <pre>{`
+    <pre className="overflow-x-scroll">{`
 // Number
 // 1. basis 2-10 (binary, hexadecimal, octal, bigint)
 // 2. Number.EPSILON .MAX_VALUE .MIN_VALUE .MAX_SAFE_INTEGER .MIN_SAFE_INTEGER .POSITIVE_INFINITY .NEGATIVE_INFIITY
