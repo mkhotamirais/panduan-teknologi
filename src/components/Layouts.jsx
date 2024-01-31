@@ -6,7 +6,7 @@ const Layouts = ({ menus }) => {
 
   return (
     <>
-      <nav className="border-b flex items-center gap-4 h-10 sticky top-16 z-40 bg-white">
+      <nav className="border-b flex items-center gap-4 h-10 sticky top-16 z-40 bg-white overflow-x-scroll">
         {menus.map((menu, i) => (
           <NavLink
             key={i}

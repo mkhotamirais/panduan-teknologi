@@ -13,11 +13,11 @@ const Header = () => {
 
   return (
     <header className="border-b px-3 lg:px-16 h-16 flex justify-between items-center sticky top-0 z-50 bg-white">
-      <nav className="flex items-center gap-8">
+      <nav className="flex items-center gap-6">
         <NavLink to="/" onClick={() => setActive(null)}>
           <FaHome />
         </NavLink>
-        <div className="flex gap-4">
+        <div className="flex gap-3 overflow-x-scroll w-52 xs:w-full">
           {menus.map((menu, i) => (
             <NavLink
               key={i}
