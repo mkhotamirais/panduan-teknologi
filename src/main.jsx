@@ -36,9 +36,9 @@ import Es5Module2 from "./pages/start/javascript/jsModule/es5Module/Es5Module2";
 import Es5Module3 from "./pages/start/javascript/jsModule/es5Module/Es5Module3";
 import Es5ModuleIndex from "./pages/start/javascript/jsModule/es5Module/Es5ModuleIndex";
 import Es6ModuleIndex from "./pages/start/javascript/jsModule/es6Module/Es6ModuleIndex";
-import Es6Module1 from "./pages/start/javascript/jsModule/es6Module/es6Module1";
 import NodemodulesLayout from "./pages/nodejs/nodemodules/NodemodulesLayout";
 import Http from "./pages/nodejs/nodemodules/http/Http";
+import Es6Module1 from "./pages/start/javascript/jsModule/es6Module/Es6Module1";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
