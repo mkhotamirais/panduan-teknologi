@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsDasar = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 let str = "ahmad";
 let num = 20;
 let bool = false;
@@ -62,7 +64,7 @@ for (let i in strFor) console.log(i);
 for (let i of arrFor) console.log(i, arrFor[i]);
 for (let i in arrFor) console.log(i, arrFor[i]);
 for (let i in objFor) console.log(i, objFor[i]);
-      `}</pre>
+      `}</Pre>
   );
 };
 

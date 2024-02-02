@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsFnNoArrow = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 // Arrow function tidak bisa menggunakan konsep hoisting, artuments dan this
 // 1. Hoisting
 // a. (creatian phase = execution phase) fungsi secara default didefinisikan undefined
@@ -20,7 +22,7 @@ console.log(Fn2("ahmad", "abdul", "siti"));
 console.log(
   "4. This: method objek yang menggunakan key this, artinya aksesnya hanya terbatas pada objek itu saja, karena dengan objek maka tidak menggunakan konsep hoisting juga"
 );
-    `}</pre>
+    `}</Pre>
   );
 };
 

@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsArray = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 const arrInherit = ["a", "b", ["aa", "bb", ["aaa", "bbb"]]];
 const arr = ["a", "b", "c"];
 
@@ -60,7 +62,7 @@ const names = ["ahmad", "abdul", "siti"];
 names.map((item, i) => console.log(i + 1, item));
 const namesFilter = names.filter((item, i) => item.includes("a"));
 console.log(namesFilter);
-    `}</pre>
+    `}</Pre>
   );
 };
 

@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsFnClosure = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +38,7 @@ const JsFnClosure = () => {
     </script>
   </body>
 </html>
-    `}</pre>
+    `}</Pre>
   );
 };
 

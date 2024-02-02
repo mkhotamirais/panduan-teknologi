@@ -4,5 +4,5 @@ H2.propTypes;
 export const H3 = ({ children }) => <h3 className={`capitalize font-medium leading-relaxed`}>{children}</h3>;
 H3.propTypes;
 
-export const Pre = ({ children }) => <pre className={`overflow-x-scroll`}>{children}</pre>;
+export const Pre = ({ children }) => <pre className={`overflow-x-scroll text-xs`}>{children}</pre>;
 Pre.propTypes;

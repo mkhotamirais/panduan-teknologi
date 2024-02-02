@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-const Layouts = ({ menus }) => {
+const Layouts = ({ menus, className = "capitalize" }) => {
   const [active, setActive] = useState(0);
 
   return (
@@ -12,7 +12,7 @@ const Layouts = ({ menus }) => {
             key={i}
             to={menu.to}
             onClick={() => setActive(i)}
-            className={`${active === i ? "opacity-50" : null} capitalize hover:opacity-50`}
+            className={`${active === i ? "opacity-50" : null} ${className} hover:opacity-50`}
           >
             {menu.text}
           </NavLink>

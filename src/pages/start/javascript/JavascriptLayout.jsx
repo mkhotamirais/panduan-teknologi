@@ -6,6 +6,7 @@ const menus = [
   { to: "jsFunctions", text: "jsFunctions" },
   { to: "jsAdvance", text: "jsAdvance" },
   { to: "jsCases", text: "jsCases" },
+  { to: "jsModule", text: "jsModule" },
 ];
 
 const JavascriptLayout = () => {

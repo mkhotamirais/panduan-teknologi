@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsNumber = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 // Number
 // 1. basis 2-10 (binary, hexadecimal, octal, bigint)
 // 2. Number.EPSILON .MAX_VALUE .MIN_VALUE .MAX_SAFE_INTEGER .MIN_SAFE_INTEGER .POSITIVE_INFINITY .NEGATIVE_INFIITY
@@ -17,7 +19,7 @@ console.log(Number.isFinite(0));
 // 3. Math.max.apply(null, [arr]),
 // 4. Math.E .PI .SQRT2 .SQRT1_2,
 // 5. Math.random()
-    `}</pre>
+    `}</Pre>
   );
 };
 

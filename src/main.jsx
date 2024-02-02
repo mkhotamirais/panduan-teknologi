@@ -29,6 +29,16 @@ import JsBasic from "./pages/start/javascript/jsBasic/JsBasic";
 import JsFunctions from "./pages/start/javascript/jsFunctions/JsFunctions";
 import JsAdvance from "./pages/start/javascript/jsAdvance/JsAdvance";
 import JsCases from "./pages/start/javascript/jsCases/JsCases";
+import JsModuleLayout from "./pages/start/javascript/jsModule/JsModuleLayout";
+import JsModule from "./pages/start/javascript/jsModule/JsModule";
+import Es5Module1 from "./pages/start/javascript/jsModule/es5Module/Es5Module1";
+import Es5Module2 from "./pages/start/javascript/jsModule/es5Module/Es5Module2";
+import Es5Module3 from "./pages/start/javascript/jsModule/es5Module/Es5Module3";
+import Es5ModuleIndex from "./pages/start/javascript/jsModule/es5Module/Es5ModuleIndex";
+import Es6ModuleIndex from "./pages/start/javascript/jsModule/es6Module/Es6ModuleIndex";
+import Es6Module1 from "./pages/start/javascript/jsModule/es6Module/es6Module1";
+import NodemodulesLayout from "./pages/nodejs/nodemodules/NodemodulesLayout";
+import Http from "./pages/nodejs/nodemodules/http/Http";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +54,16 @@ const router = createBrowserRouter(
           <Route path="jsFunctions" element={<JsFunctions />} />
           <Route path="jsAdvance" element={<JsAdvance />} />
           <Route path="jsCases" element={<JsCases />} />
+          <Route path="jsModule" element={<JsModuleLayout />}>
+            <Route index element={<JsModule />} />
+            <Route path="es5ModuleIndex" element={<Es5ModuleIndex />} />
+            <Route path="es5Module1" element={<Es5Module1 />} />
+            <Route path="es5Module2" element={<Es5Module2 />} />
+            <Route path="es5Module3" element={<Es5Module3 />} />
+            <Route path="es6ModuleIndex" element={<Es6ModuleIndex />} />
+            <Route path="es6Module1" element={<Es6Module1 />} />
+          </Route>
+          <Route path="jsEs6Module" element={<JsCases />} />
         </Route>
       </Route>
       <Route path="databases" element={<DatabasesLayout />}>
@@ -53,7 +73,10 @@ const router = createBrowserRouter(
       </Route>
       <Route path="nodejs" element={<NodejsLayout />}>
         <Route index element={<Nodejs />} />
-        <Route path="nodemodules" element={<Nodemodules />} />
+        <Route path="nodemodules" element={<NodemodulesLayout />}>
+          <Route index element={<Nodemodules />} />
+          <Route path="http" element={<Http />} />
+        </Route>
         <Route path="npm" element={<NpmLayout />}>
           <Route index element={<Npm />} />
           <Route path="npmclient" element={<NpmClientLayout />}>

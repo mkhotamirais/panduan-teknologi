@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsFnScope = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 // Scope
 // a. variable luar fungsi bisa diakses di dalam fungsi
 // b. variable dalam fungsi tidak bisa diakses di luar fungsi karena javascript block scope
@@ -17,7 +19,7 @@ const Fn3 = () => {
   return nama1;
 };
 console.log(Fn1(), nama2, Fn3());
-    `}</pre>
+    `}</Pre>
   );
 };
 

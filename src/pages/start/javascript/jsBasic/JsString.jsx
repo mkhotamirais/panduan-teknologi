@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsString = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 const str = "abcde 1234 bcdef 2345";
 // 1. return number
 // .length
@@ -60,7 +62,7 @@ const split310 = str.split(" ", 2);
 const matchB = str.match(/b/g);
 console.log(split310);
 console.log(matchB);
-    `}</pre>
+    `}</Pre>
   );
 };
 

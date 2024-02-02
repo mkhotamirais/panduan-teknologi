@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsFnBasic = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 // Function (Fn)
 // Jenis fn: declaration fn, expression/anonimous fn, arrow fn
 // refactoring: membuat syntax fungsi lebih efektif dan efisien
@@ -73,7 +75,7 @@ function Fn5() {
   return Fn5a();
 }
 console.log(Fn5());
-    `}</pre>
+    `}</Pre>
   );
 };
 

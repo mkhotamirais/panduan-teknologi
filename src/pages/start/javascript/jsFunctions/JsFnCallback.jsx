@@ -1,6 +1,8 @@
+import { Pre } from "../../../../components/Tags";
+
 const JsFnCallback = () => {
   return (
-    <pre className="overflow-x-scroll">{`
+    <Pre>{`
 // Higher Order fn: fungsi yang parameternya fungsi lain yang disebut callback
 // berikut 5 contoh fungsi yang sama
 
@@ -32,7 +34,7 @@ Fn4(() => console.log("halo4"));
 
 // kasus kelima
 ((cb) => cb())(() => console.log("halo5"));
-    `}</pre>
+    `}</Pre>
   );
 };
 
