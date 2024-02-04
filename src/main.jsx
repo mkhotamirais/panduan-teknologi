@@ -39,6 +39,28 @@ import Es6ModuleIndex from "./pages/start/javascript/jsModule/es6Module/Es6Modul
 import NodemodulesLayout from "./pages/nodejs/nodemodules/NodemodulesLayout";
 import Http from "./pages/nodejs/nodemodules/http/Http";
 import Es6Module1 from "./pages/start/javascript/jsModule/es6Module/Es6Module1";
+import Os from "./pages/nodejs/nodemodules/os/Os";
+import Fs from "./pages/nodejs/nodemodules/fs/Fs";
+import Php from "./pages/start/php/Php";
+import ReactjsLayout from "./pages/reactjs/ReactjsLayout";
+import Reactjs from "./pages/reactjs/Reactjs";
+import ComponentsLayout from "./pages/reactjs/components/ComponentsLayout";
+import Components from "./pages/reactjs/components/Components";
+import Accordion from "./pages/reactjs/components/accordion/Accordion";
+import Pagination from "./pages/reactjs/components/pagination/Pagination";
+import MuiLayout from "./pages/reactjs/mui/MuiLayout";
+import Mui from "./pages/reactjs/mui/Mui";
+import MuiTypography from "./pages/reactjs/mui/muiComponents/MuiTypography";
+import MuiButton from "./pages/reactjs/mui/muiComponents/MuiButton";
+import MuiSelect from "./pages/reactjs/mui/muiComponents/MuiSelect";
+import MuiTextField from "./pages/reactjs/mui/muiComponents/MuiTextField";
+import MuiRadio from "./pages/reactjs/mui/muiComponents/MuiRadio";
+import MuiCheckbox from "./pages/reactjs/mui/muiComponents/MuiCheckbox";
+import MuiSwitch from "./pages/reactjs/mui/muiComponents/MuiSwitch";
+import MuiRating from "./pages/reactjs/mui/muiComponents/MuiRating";
+import MuiAutoComplete from "./pages/reactjs/mui/muiComponents/MuiAutoComplete";
+import MuiBox from "./pages/reactjs/mui/muiComponents/MuiBox";
+import MuiGrid from "./pages/reactjs/mui/muiComponents/MuiGrid";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -65,6 +87,7 @@ const router = createBrowserRouter(
           </Route>
           <Route path="jsEs6Module" element={<JsCases />} />
         </Route>
+        <Route path="php" element={<Php />} />
       </Route>
       <Route path="databases" element={<DatabasesLayout />}>
         <Route index element={<Databases />} />
@@ -76,6 +99,8 @@ const router = createBrowserRouter(
         <Route path="nodemodules" element={<NodemodulesLayout />}>
           <Route index element={<Nodemodules />} />
           <Route path="http" element={<Http />} />
+          <Route path="os" element={<Os />} />
+          <Route path="fs" element={<Fs />} />
         </Route>
         <Route path="npm" element={<NpmLayout />}>
           <Route index element={<Npm />} />
@@ -87,6 +112,28 @@ const router = createBrowserRouter(
             <Route index element={<NpmServer />} />
             <Route path="express" element={<Express />} />
           </Route>
+        </Route>
+      </Route>
+      <Route path="reactjs" element={<ReactjsLayout />}>
+        <Route index element={<Reactjs />} />
+        <Route path="components" element={<ComponentsLayout />}>
+          <Route index element={<Components />} />
+          <Route path="accordion" element={<Accordion />} />
+          <Route path="pagination" element={<Pagination />} />
+        </Route>
+        <Route path="mui" element={<MuiLayout />}>
+          <Route index element={<Mui />} />
+          <Route path="muitypography" element={<MuiTypography />} />
+          <Route path="muibutton" element={<MuiButton />} />
+          <Route path="muiselect" element={<MuiSelect />} />
+          <Route path="muitextfield" element={<MuiTextField />} />
+          <Route path="muiradio" element={<MuiRadio />} />
+          <Route path="muicheckbox" element={<MuiCheckbox />} />
+          <Route path="muiswitch" element={<MuiSwitch />} />
+          <Route path="muirating" element={<MuiRating />} />
+          <Route path="muiautocomplete" element={<MuiAutoComplete />} />
+          <Route path="muibox" element={<MuiBox />} />
+          <Route path="muigrid" element={<MuiGrid />} />
         </Route>
       </Route>
     </Route>

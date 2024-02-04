@@ -4,6 +4,7 @@ const menus = [
   { to: "html", text: "html" },
   { to: "css", text: "css" },
   { to: "javascript", text: "javascript" },
+  { to: "php", text: "php" },
 ];
 
 const StartLayout = () => {

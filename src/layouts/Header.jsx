@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaHome, FaMoon, FaUser } from "react-icons/fa";
+import { FaHome, FaMoon, FaReact, FaUser } from "react-icons/fa";
 import { useState } from "react";
 
 const menus = [
@@ -30,13 +30,16 @@ const Header = () => {
           ))}
         </div>
       </nav>
-      <nav className="flex gap-4">
+      <nav className="flex gap-3">
         <button>
           <FaUser />
         </button>
         <button>
           <FaMoon />
         </button>
+        <NavLink to="reactjs">
+          <FaReact />
+        </NavLink>
       </nav>
     </header>
   );

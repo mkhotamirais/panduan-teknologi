@@ -16,6 +16,14 @@ const JsCases = () => {
           <b>filter array of object</b>
           <JsFilterArrayObject />
         </li>
+        <li>find max value in array of object</li>
+        <pre>{`
+// ------ Cara 1
+const data = [{id: 1, value: 2},{id: 2, value: 4},{id: 3, value: 7},];
+const maxVal = data.reduce((acc, d) => acc = acc > d.value ? acc : d.value, 0);
+const maxVal2 = Math.max(...data.map((data) => data.value));
+console.log(maxVal, maxVal2)
+        `}</pre>
       </ul>
     </article>
   );
