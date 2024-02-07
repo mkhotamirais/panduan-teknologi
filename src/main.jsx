@@ -65,10 +65,11 @@ import VcsLayout from "./pages/start/vcs/VcsLayout";
 import Vcs from "./pages/start/vcs/Vcs";
 import Git from "./pages/start/vcs/git/Git";
 import Github from "./pages/start/vcs/Github.jsx/Github";
+import ErrorBoundary from "./pages/ErrorBoundary";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<Layout />} errorElement={<ErrorBoundary />}>
       <Route index element={<Home />} />
       <Route path="start" element={<StartLayout />}>
         <Route index element={<Start />} />
