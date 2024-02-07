@@ -61,6 +61,10 @@ import MuiRating from "./pages/reactjs/mui/muiComponents/MuiRating";
 import MuiAutoComplete from "./pages/reactjs/mui/muiComponents/MuiAutoComplete";
 import MuiBox from "./pages/reactjs/mui/muiComponents/MuiBox";
 import MuiGrid from "./pages/reactjs/mui/muiComponents/MuiGrid";
+import VcsLayout from "./pages/start/vcs/VcsLayout";
+import Vcs from "./pages/start/vcs/Vcs";
+import Git from "./pages/start/vcs/git/Git";
+import Github from "./pages/start/vcs/Github.jsx/Github";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -135,6 +139,11 @@ const router = createBrowserRouter(
           <Route path="muibox" element={<MuiBox />} />
           <Route path="muigrid" element={<MuiGrid />} />
         </Route>
+      </Route>
+      <Route path="vcs" element={<VcsLayout />}>
+        <Route index element={<Vcs />} />
+        <Route path="git" element={<Git />} />
+        <Route path="github" element={<Github />} />
       </Route>
     </Route>
   )

@@ -69,6 +69,12 @@ const Php = () => {
       <H4>Persiapan lingkungan</H4>
       <ul className="list-inside list-disc">
         <li>
+          download xampp, open control panel (start apache and mysql); open explorer on control panel (htdocs) create file
+          name.php type{" "}
+          <pre>{`<?php echo "hello world"; var_dump("hello world") open url: http://localhost/foldername/file.php ?>
+        `}</pre>
+        </li>
+        <li>
           jika tidak mau repot instal dan konfigurasi satu-satu maka cukup install all in one packages yaitu WAMP, MAMP,
           LAMP, XAMPP. w window, a apache, m mysql, p php, m macintosh, l linux, xampp bisa diinstall untuk semua sistem
           operasi,{" "}
@@ -88,6 +94,20 @@ const Php = () => {
         <li>
           Semua file php kita harus disimpan di folder htdocs C:\xampp\htdocs. mari kita mula dengan membuat folder phpbasic
         </li>{" "}
+        <li>
+          <b>php basic</b> integer, singel quote, double quote, multiline string, heredoc/nowdoc, $var, $$var, constat,
+          scope, local/global/static, GLOBALS, variable reference, array, map, nested, concat, operator (arithmetic,
+          assignment, comparison, logic, increment, decrement); expression, statement and block, if else, switch case,
+          shorten if : ternary, nullish coalescing; loop for, do, while, break, continue, foreach; function, parameter,
+          anonimous function, use, arrow, callable, call_user_func, built-in function: join, explode, implode, strtoloser,
+          trim, substr, rsort, array_keys, array_values, is_string, is_array; require, include, require once, include once
+        </li>
+        <li>
+          <b>php oop</b>
+          class, property, method, object new, constructor, destructor, visibility (public/private/protected), type
+          declaration ? for null, self::[constant]; inheritance parent child extends parent, object type; overriding function
+          and overriding constructor; namespace import use alias as group use declaration
+        </li>
       </ul>
     </section>
   );

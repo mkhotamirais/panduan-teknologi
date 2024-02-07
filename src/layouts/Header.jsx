@@ -6,6 +6,7 @@ const menus = [
   { to: "start", text: "start" },
   { to: "databases", text: "databases" },
   { to: "nodejs", text: "nodejs" },
+  { to: "vcs", text: "vcs" },
 ];
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
         <NavLink to="/" onClick={() => setActive(null)}>
           <FaHome />
         </NavLink>
-        <div className="flex gap-3 overflow-x-scroll w-52 xs:w-full">
+        <div className="flex gap-3 overflow-x-scroll w-48 xs:w-full">
           {menus.map((menu, i) => (
             <NavLink
               key={i}
