@@ -150,9 +150,9 @@ const externalLinks = [
     url: "https://www.codeigniter.com/",
   },
   {
-    icon: "babeljs",
+    url: <SiBabel /> || "babeljs",
     title: "babeljs",
-    url: <SiBabel /> || "https://babeljs.io/",
+    icon: "https://babeljs.io/",
   },
   {
     icon: <SiJquery /> || "jquery",
