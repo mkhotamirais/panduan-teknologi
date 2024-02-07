@@ -2,7 +2,7 @@
   "name": "panduan-teknologi",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mkhotamirais.github.io/panduan-teknologi",
+  "homepage": "https://mkhotamirais.github.io/panduan-teknologi/",
   "type": "module",
   "scripts": {
     "dev": "vite",
