@@ -32,12 +32,16 @@ import {
   SiLaragon,
   SiInsomnia,
   SiNextdotjs,
+  SiVite,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
+
 import { DiMaterializecss } from "react-icons/di";
 
 const Resources = () => {
   return (
-    <div className="flex flex-wrap gap-5 text-2xl">
+    <div className="flex flex-wrap gap-6 text-3xl">
       {externalLinks.map((el, i) => (
         <a key={i} href={el.url} title={el.title}>
           <div>{el.icon}</div>
@@ -208,6 +212,26 @@ const externalLinks = [
   {
     icon: <SiLaragon /> || "laragon",
     title: "laragon",
+    url: "",
+  },
+  {
+    icon: <SiVite /> || "vite",
+    title: "vite",
+    url: "https://vitejs.dev/",
+  },
+  {
+    icon: <SiVercel /> || "vercel",
+    title: "vercel",
+    url: "https://vercel.com/",
+  },
+  {
+    icon: <SiNetlify /> || "netlify",
+    title: "netlify",
+    url: "https://www.netlify.com/",
+  },
+  {
+    icon: "",
+    title: "",
     url: "",
   },
   {
