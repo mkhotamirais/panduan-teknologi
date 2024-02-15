@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaHome, FaMoon, FaReact, FaUser } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 
 const menus = [
@@ -18,7 +18,7 @@ const Header = () => {
         <NavLink to="/" onClick={() => setActive(null)}>
           <FaHome />
         </NavLink>
-        <div className="flex gap-3 overflow-x-scroll w-48 xs:w-full">
+        <div className="flex gap-3 overflow-x-scroll">
           {menus.map((menu, i) => (
             <NavLink
               key={i}
@@ -30,17 +30,6 @@ const Header = () => {
             </NavLink>
           ))}
         </div>
-      </nav>
-      <nav className="flex gap-3">
-        <button>
-          <FaUser />
-        </button>
-        <button>
-          <FaMoon />
-        </button>
-        <NavLink to="reactjs">
-          <FaReact />
-        </NavLink>
       </nav>
     </header>
   );
