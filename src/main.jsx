@@ -51,6 +51,7 @@ import Tasks from "./pages/tasks/Tasks";
 import TasksLayout from "./pages/tasks/TasksLayout";
 import EduworkExam from "./pages/tasks/eduworkExam/EduworkExam";
 import Penyaluran from "./pages/tasks/penyaluran/Penyaluran";
+import Porto from "./pages/porto/Porto";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -114,6 +115,7 @@ const router = createBrowserRouter(
         <Route path="eduworkExam" element={<EduworkExam />} />
         <Route path="penyaluran" element={<Penyaluran />} />
       </Route>
+      <Route path="porto" element={<Porto />} />
     </Route>
   )
 );

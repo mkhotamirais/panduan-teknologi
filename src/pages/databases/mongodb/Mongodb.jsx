@@ -100,6 +100,73 @@ authorization: enabled`}</pre>
           method, query building
         </li>
       </ul>
+      <H2>Ngga tau dari mana</H2>
+      <Pre>{`
+db.grantRolesToUser("root", [
+{ role: "readWriteAnyDatabase", db: "admin" },])
+
+myeduwork 220598Ota
+myeduworkSecond 220598OtaSecond
+
+
+show dbs / show database
+use db_name
+show tables / show collections
+db.createCollection('table_name');
+db.table_name.drop()
+db.table_name.insertOne({
+    nama: "ahmad",
+    umur: 20,
+    status: true
+})
+db.table_name.find()
+db.table_name.insertMany(
+    [
+        {
+            nama: "siti",
+            umur: 20,
+            status: true
+        },
+        {
+            nama: "abdul",
+            umur: 21,
+            status: false
+        }
+    ]    
+)
+db.table_name.find({status: false})
+db.table_name.find().sort({price: 1}) // sorting ascending
+db.table_name.find().sort({price: -1}).limit(2) // sorting descending with limit 2
+db.table_name.find().count() // total data
+db.table_name.find({price: {$lt: 2000}});
+db.table_name.find({name: {$in: ["pulpen"]}})
+------ $lt < $gt > $lte <= $gte >= $in in array
+db.table_name.updateOne({name: "pulpen"}, {$set: {name: "penggaris"}})
+
+
+****** Atuhentication *******
+mekanisme keamanan untuk membatasi hak akses pada suatu database
+cari: C:Program Files/MongoDB/Server/6.0/bin/mongod.cfg open 
+
+tambahkan baris code berikut
+#security:
+security:
+  authorization: enabled
+
+kembali ke terminal
+use.admin
+db.createUser({
+    user: 'my_name',
+    pwd: 'my_password',
+    roles: [{
+
+        role: 'readWrite',
+        db: 'my_database'
+    }]
+})
+------- role: read; readWrite; dbAdmin; userAdmin; dbOwner; readAnyDatabase; userAdminAnyDatabase; dbAdminAnyDatabase; root
+db.system.users.find()
+      `}</Pre>
     </section>
   );
 };
