@@ -5,3 +5,16 @@
 .overflow-x-scroll::-webkit-scrollbar {
   display: none;
 }
+
+ul a,
+ol a {
+  @apply text-blue-500;
+}
+
+#tugasPembelajaran li a {
+  @apply text-blue-500;
+}
+
+html {
+  @apply scroll-smooth;
+}

@@ -47,6 +47,10 @@ import Vcs from "./pages/start/vcs/Vcs";
 import Git from "./pages/start/vcs/git/Git";
 import Github from "./pages/start/vcs/Github.jsx/Github";
 import ErrorBoundary from "./pages/ErrorBoundary";
+import Tasks from "./pages/tasks/Tasks";
+import TasksLayout from "./pages/tasks/TasksLayout";
+import EduworkExam from "./pages/tasks/eduworkExam/EduworkExam";
+import Penyaluran from "./pages/tasks/penyaluran/Penyaluran";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -104,6 +108,11 @@ const router = createBrowserRouter(
         <Route index element={<Vcs />} />
         <Route path="git" element={<Git />} />
         <Route path="github" element={<Github />} />
+      </Route>
+      <Route path="tasks" element={<TasksLayout />}>
+        <Route index element={<Tasks />} />
+        <Route path="eduworkExam" element={<EduworkExam />} />
+        <Route path="penyaluran" element={<Penyaluran />} />
       </Route>
     </Route>
   )

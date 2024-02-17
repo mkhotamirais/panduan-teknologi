@@ -7,6 +7,7 @@ const menus = [
   { to: "databases", text: "databases" },
   { to: "nodejs", text: "nodejs" },
   { to: "vcs", text: "vcs" },
+  { to: "tasks", text: "tasks" },
 ];
 
 const Header = () => {
