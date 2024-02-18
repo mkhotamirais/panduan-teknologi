@@ -41,9 +41,9 @@ import { DiMaterializecss } from "react-icons/di";
 
 const Resources = () => {
   return (
-    <div className="flex flex-wrap gap-6 text-3xl">
+    <div className="grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-10 gap-5 text-2xl sm:text-4xl">
       {externalLinks.map((el, i) => (
-        <a key={i} href={el.url} title={el.title}>
+        <a key={i} href={el.url} title={el.title} className="flex justify-center items-center">
           <div>{el.icon}</div>
         </a>
       ))}
@@ -302,12 +302,5 @@ const externalLinks = [
     title: "",
     category: "",
     url: "",
-  },
-  {
-    icon: "niagahoster",
-    title: "niagahoster",
-    category: "",
-    hex: "",
-    url: "https://www.niagahoster.co.id/",
   },
 ];
