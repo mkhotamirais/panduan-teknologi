@@ -13,6 +13,7 @@ const portoHosting = [{ href: "https://hadinalmusri.com/", src: "../images/hadin
 
 const portoFreeHosting = [
   { href: "https://eduwork-fesisko.vercel.app/", src: "../images/eduwork-fesisko.jpg", title: "eduwork fe-sisko" },
+  { href: "https://react-crud-redux-basic.vercel.app/", src: "", title: "react-crud-redux-basic" },
 ];
 
 const Porto = () => {
