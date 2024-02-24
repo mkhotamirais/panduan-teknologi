@@ -20,7 +20,7 @@ const Header = () => {
         <NavLink to="/" onClick={() => setActive(null)}>
           <FaHome />
         </NavLink>
-        <div className="flex gap-3 overflow-x-scroll w-[calc(100vw-4rem)]">
+        <div className="flex gap-3 overflow-x-scroll">
           {menus.map((menu, i) => (
             <NavLink
               key={i}
